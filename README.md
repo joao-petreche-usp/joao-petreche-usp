@@ -4,9 +4,23 @@
 
 Naval and Oceanic Engineer with a Ph.D. from the University of São Paulo (USP). My research integrates rigorous engineering design principles with high-performance building energy simulation (BEM), combining computational methods and AI to accelerate performance-based design.
 
+📄 **Academic profile:** [Lattes CNPq](http://lattes.cnpq.br/4372288782582811)
+
 ---
 
-## 🚀 Featured Project
+## 🔬 Research & Curriculum: A Connected Vision
+
+My work operates on two interconnected fronts:
+
+**1. Applied Research** — Developing a novel computational framework for multi-objective building optimization, using Axiomatic Design, Google OR-Tools (CP-SAT), and the EnergyPlus Python API. This research generates real, complex engineering problems that demand cutting-edge AI and cloud computing solutions.
+
+**2. AI Engineering Curriculum** — The hands-on experience gained from this research directly feeds the [`AI-Engineering-Curriculum`](https://github.com/joao-petreche-usp/AI-Engineering-Curriculum) repository, which documents methods, tools, and workflows at the intersection of Scientific AI Engineering and high-performance computing.
+
+> The research *is* the curriculum. Real problems, real infrastructure, real methods.
+
+---
+
+## 🚀 Featured Research Project
 
 ### Hierarchical & Sequential Multi-Objective Building Optimization
 
@@ -24,7 +38,15 @@ This project addresses a fundamental challenge in sustainable architecture: the 
 
 **Current status:** MVP integrates EnergyPlus Python API, Google Colab, and Cloud Shell. Phase 1 focuses on Global Sensitivity Analysis before full multi-objective optimization deployment.
 
-> 📌 **Note for Google Cloud Research Credits reviewers:** The `EnergyPlus-API-Colab` repository is currently private as it contains the MVP under active development. It will be made fully open-source once Google Cloud infrastructure is provisioned to support the parallelization required for the next phase.
+> 📌 **Note for Google Cloud Research Credits reviewers:** The `EnergyPlus-API-Colab` repository is currently private as it contains the MVP under active development. It will be made fully open-source upon provisioning of Google Cloud infrastructure to support the parallelization required for the next phase. Full proposal details are available in the [Pitch Deck](https://docs.google.com/presentation/d/113uOEHTrurctVl06UTyo0BxiTT9fSS3C4uxJg3fNEuA/edit?usp=sharing) and [Executive Summary](https://docs.google.com/document/d/17xuGvZhVNkRToaolFrlB9jRxfo0yIEc0NEwkq1v5TC8/edit?usp=sharing).
+
+---
+
+## 📂 Public Repositories
+
+| Repository | Description |
+|---|---|
+| [`AI-Engineering-Curriculum`](https://github.com/joao-petreche-usp/AI-Engineering-Curriculum) | Methods, tools, and workflows in Scientific AI Engineering — built from real research experience |
 
 ---
 
@@ -47,15 +69,16 @@ This project addresses a fundamental challenge in sustainable architecture: the 
 ## 🎓 Background
 
 - **Ph.D.** — University of São Paulo (USP)
-- **Naval and Oceanic Engineering** — Escola Politécnica da USP
+- **Naval and Oceanic Engineering** — Escola Politécnica da USP (POLI)
 - **Department** — Construction Engineering (PCC / POLI-USP)
 - **Focus areas** — Building Energy Modeling (BEM) · Axiomatic Design · Multi-Objective Optimization · Scientific AI Engineering
 
 ---
 
-## 📫 Contact
+## 📫 Contact & Academic Profile
 
-*Feel free to reach out for research collaboration, questions about building energy simulation, or AI applied to engineering design.*
+- 📄 [Lattes CNPq](http://lattes.cnpq.br/4372288782582811)
+- 🏛️ Escola Politécnica da USP — Department of Construction Engineering (PCC)
 
 ---
 
