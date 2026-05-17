@@ -38,7 +38,7 @@ This project addresses a fundamental challenge in sustainable architecture: the 
 
 **Current status:** MVP integrates EnergyPlus Python API, Google Colab, and Cloud Shell. Phase 1 focuses on Global Sensitivity Analysis before full multi-objective optimization deployment.
 
-> 📌 **Note for Google Cloud Research Credits reviewers:** The `EnergyPlus-API-Colab` repository is currently private as it contains the MVP under active development. It will be made fully open-source upon provisioning of Google Cloud infrastructure to support the parallelization required for the next phase. Full proposal details are available in the [Pitch Deck](https://docs.google.com/presentation/d/113uOEHTrurctVl06UTyo0BxiTT9fSS3C4uxJg3fNEuA/edit?usp=sharing) and [Executive Summary](https://docs.google.com/document/d/17xuGvZhVNkRToaolFrlB9jRxfo0yIEc0NEwkq1v5TC8/edit?usp=sharing).
+> 📌 **Note for Google Cloud Research Credits reviewers:** The [`EnergyPlus-API-Colab`](https://github.com/joao-petreche-usp/EnergyPlus-API-Colab) repository is now public and contains the current MVP. Full proposal details are available in the [Pitch Deck](https://docs.google.com/presentation/d/113uOEHTrurctVl06UTyo0BxiTT9fSS3C4uxJg3fNEuA/edit?usp=sharing) and [Executive Summary](https://docs.google.com/document/d/17xuGvZhVNkRToaolFrlB9jRxfo0yIEc0NEwkq1v5TC8/edit?usp=sharing).
 
 ---
 
@@ -46,6 +46,7 @@ This project addresses a fundamental challenge in sustainable architecture: the 
 
 | Repository | Description |
 |---|---|
+| [`EnergyPlus-API-Colab`](https://github.com/joao-petreche-usp/EnergyPlus-API-Colab) | MVP — Hierarchical multi-objective building optimization via Axiomatic Design, OR-Tools and EnergyPlus Python API |
 | [`AI-Engineering-Curriculum`](https://github.com/joao-petreche-usp/AI-Engineering-Curriculum) | Methods, tools, and workflows in Scientific AI Engineering — built from real research experience |
 
 ---
@@ -78,7 +79,7 @@ This project addresses a fundamental challenge in sustainable architecture: the 
 ## 📫 Contact & Academic Profile
 
 - 📄 [Lattes CNPq](http://lattes.cnpq.br/4372288782582811)
-- 🏛️ [Escola Politécnica da USP — Department of Construction Engineering (PCC)](https://www.poli.usp.br/departamentos/pcc-engenharia-de-construcao-civil/)
+- 🏛️ Escola Politécnica da USP — Department of Construction Engineering (PCC)
 
 ---
 
