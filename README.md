@@ -78,7 +78,7 @@ This project addresses a fundamental challenge in sustainable architecture: the 
 ## 📫 Contact & Academic Profile
 
 - 📄 [Lattes CNPq](http://lattes.cnpq.br/4372288782582811)
-- 🏛️ Escola Politécnica da USP — Department of Construction Engineering (PCC)
+- 🏛️ [Escola Politécnica da USP — Department of Construction Engineering (PCC)](https://www.poli.usp.br/departamentos/pcc-engenharia-de-construcao-civil/)
 
 ---
 
