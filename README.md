@@ -38,7 +38,7 @@ This project addresses a fundamental challenge in sustainable architecture: the 
 
 **Current status:** MVP integrates EnergyPlus Python API, Google Colab, and Cloud Shell. Phase 1 focuses on Global Sensitivity Analysis before full multi-objective optimization deployment.
 
-> 📌 **Note for Google Cloud Research Credits reviewers:** The [`EnergyPlus-API-Colab`](https://github.com/joao-petreche-usp/EnergyPlus-API-Colab) repository is now public and contains the current MVP. Full proposal details are available in the [Pitch Deck](https://docs.google.com/presentation/d/1mwtuoV0NTyVYyLAwFpMRV4MSvGqNZ3tGkKQTn-5whL4/edit?usp=drive_link) and [Executive Summary](https://docs.google.com/document/d/1Ntieeq1uP-dpc0YyAWM94hxU7kfFrBKzq0iXK6UCdcM/edit?usp=drive_link).
+> 📌 **Note for Google Cloud Research Credits reviewers:** The [`EnergyPlus-API-Colab`](https://github.com/joao-petreche-usp/EnergyPlus-API-Colab) repository is now public and contains the current MVP. Full proposal details are available in the [Pitch Deck](https://docs.google.com/presentation/d/1mwtuoV0NTyVYyLAwFpMRV4MSvGqNZ3tGkKQTn-5whL4/edit?usp=drive_link) and [Executive Summary](https://docs.google.com/document/d/1RrQAuSVffBZdTZbJRmyhQ0SiSt1eB3s80ofjpem6svg/edit?usp=drive_link).
 
 ---
 
