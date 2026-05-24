@@ -36,9 +36,9 @@ This project addresses a fundamental challenge in sustainable architecture: the 
 
 **Target impact:** Reduce the computational cost of complex building energy simulations by over 90% while ensuring identification of true Pareto-optimal solutions.
 
-**Current status:** MVP integrates EnergyPlus Python API, Google Colab, and Cloud Shell. Phase 1 focuses on Global Sensitivity Analysis before full multi-objective optimization deployment.
+**Current status:** Public reproducibility companion released — [`EnergyPlus-API-Colab`](https://github.com/joao-petreche-usp/EnergyPlus-API-Colab). The canonical GCP VM pipeline reproduces the published Pareto front; GSA Morris over 5 design parameters (90 simulations) ranks `orientation`, `wall_r`, and `roof_r` as the Level-1/2 axiomatic priorities, validated against a 192-simulation exhaustive ground truth on the `5ZoneAirCooled` archetype.
 
-> 📌 **Note for Google Cloud Research Credits reviewers:** The [`EnergyPlus-API-Colab`](https://github.com/joao-petreche-usp/EnergyPlus-API-Colab) repository is now public and contains the current MVP. Full proposal details are available in the [Pitch Deck](https://docs.google.com/presentation/d/1mwtuoV0NTyVYyLAwFpMRV4MSvGqNZ3tGkKQTn-5whL4/edit?usp=drive_link) and [Executive Summary](https://docs.google.com/document/d/1RrQAuSVffBZdTZbJRmyhQ0SiSt1eB3s80ofjpem6svg/edit?usp=drive_link).
+> 📌 **For Google Cloud Research Credits reviewers:** The Proof of Concept is complete and publicly reproducible at [`EnergyPlus-API-Colab`](https://github.com/joao-petreche-usp/EnergyPlus-API-Colab) — the May 2026 refactor scopes the repo as the paper companion and ships the full GSA → CP-SAT lexicographic → EnergyPlus pipeline with a validated 3-candidate MLT Pareto front. Requested credits (**USD 4,168.52** — N4 Compute Engine + Codey + GCS) fund the scale-out from this single-archetype validation to DOE reference multi-zone commercial models, where the 91.2% function-evaluation reduction (Talami et al. 2024) translates directly into weeks→hours of wall-clock savings. Full proposal: [Pitch Deck](https://docs.google.com/presentation/d/1mwtuoV0NTyVYyLAwFpMRV4MSvGqNZ3tGkKQTn-5whL4/edit?usp=drive_link) · [Executive Report](https://docs.google.com/document/d/1Ntieeq1uP-dpc0YyAWM94hxU7kfFrBKzq0iXK6UCdcM/edit?usp=sharing).
 
 ---
 
@@ -46,7 +46,7 @@ This project addresses a fundamental challenge in sustainable architecture: the 
 
 | Repository | Description |
 |---|---|
-| [`EnergyPlus-API-Colab`](https://github.com/joao-petreche-usp/EnergyPlus-API-Colab) | MVP — Hierarchical multi-objective building optimization via Axiomatic Design, OR-Tools and EnergyPlus Python API |
+| [`EnergyPlus-API-Colab`](https://github.com/joao-petreche-usp/EnergyPlus-API-Colab) | Paper-reproducibility companion — hierarchical multi-objective building optimization via Axiomatic Design, OR-Tools and EnergyPlus Python API |
 | [`AI-Engineering-Curriculum`](https://github.com/joao-petreche-usp/AI-Engineering-Curriculum) | Methods, tools, and workflows in Scientific AI Engineering — built from real research experience |
 
 ---
