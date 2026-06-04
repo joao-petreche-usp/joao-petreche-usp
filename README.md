@@ -12,7 +12,7 @@ Naval and Oceanic Engineer with a Ph.D. from the University of São Paulo (USP).
 
 My work operates on two interconnected fronts:
 
-**1. Applied Research** — Developing a novel computational framework for multi-objective building optimization, using Axiomatic Design, Google OR-Tools (CP-SAT), and the EnergyPlus Python API. This research generates real, complex engineering problems that demand cutting-edge AI and cloud computing solutions.
+**1. Applied Research** — Developing a novel computational framework for multi-objective building optimization, using Axiomatic Design, global sensitivity analysis (Sobol), and the EnergyPlus Python API. This research generates real, complex engineering problems that demand cutting-edge AI and cloud computing solutions.
 
 **2. AI Engineering Curriculum** — The hands-on experience gained from this research directly feeds the [`AI-Engineering-Curriculum`](https://github.com/joao-petreche-usp/AI-Engineering-Curriculum) repository, which documents methods, tools, and workflows at the intersection of Scientific AI Engineering and high-performance computing.
 
@@ -22,23 +22,21 @@ My work operates on two interconnected fronts:
 
 ## 🚀 Featured Research Project
 
-### Hierarchical & Sequential Multi-Objective Building Optimization
+### Sequential Block-Propagation for Building Energy Optimization
 
-> *Hierarchical and Sequential Multi-Objective Optimization of Buildings: Implementing Axiomatic Design via Google OR-Tools and EnergyPlus Python API*
+> *Decoupling Building Energy Models for Lexicographic Multi-Objective Optimization: A Global Sensitivity-Guided Sequential Block-Propagation Framework* (Petreche & Correa, under review at *Energy and Buildings*).
 
-This project addresses a fundamental challenge in sustainable architecture: the prohibitively expensive computational cost of performance-based building design.
+This project addresses a fundamental challenge in sustainable architecture: the prohibitively expensive computational cost of performance-based building design, where each candidate evaluation requires a detailed annual EnergyPlus simulation.
 
 **Core methodology:**
 
-- **Axiomatic Design (AD)** — Systematic decoupling of design parameters from functional requirements using a triangular matrix structure, replacing traditional "black-box" evolutionary algorithms
-- **Google OR-Tools (CP-SAT)** — Mathematically guaranteed lexicographic multi-objective optimization with native support for discrete variables directly from commercial catalogs
-- **EnergyPlus Python API** — High-fidelity thermal and energy simulation integrated programmatically into the optimization loop
+- **Sobol-Saltelli global sensitivity analysis** — Variance decomposition over the four-parameter design space (`N = 128`, 768 EnergyPlus simulations) quantifies how each design parameter drives the functional requirements (thermal discomfort, HVAC energy).
+- **Axiomatic Design (AD)** — Systematic decoupling of design parameters from functional requirements using a variance-based design matrix `A_ij := S_T(FR_i ← DP_j)`, replacing the heuristic "engineering judgment" traditionally required to assign DPs to FRs with a computable, data-driven criterion.
+- **Sequential block-propagation** — Two-block partition (comfort vs envelope) solved sequentially, with each candidate verified by an annual EnergyPlus simulation through the runtime API.
 
-**Target impact:** Reduce the computational cost of complex building energy simulations by over 90% while ensuring identification of true Pareto-optimal solutions.
+**Validated impact:** 100 % Pareto effectiveness against the exhaustive 192-simulation ground truth (HV ratio = 1.000, IGD = 0.0) at **66.7 % computational savings** (64 vs. 192 simulations) on the DOE 5ZoneAirCooled prototype in Chicago.
 
-**Current status:** Public reproducibility companion released — [`EnergyPlus-API-Colab`](https://github.com/joao-petreche-usp/EnergyPlus-API-Colab). The canonical GCP VM pipeline reproduces the published Pareto front; GSA Morris over 5 design parameters (90 simulations) ranks `orientation`, `wall_r`, and `roof_r` as the Level-1/2 axiomatic priorities, validated against a 192-simulation exhaustive ground truth on the `5ZoneAirCooled` archetype.
-
-> 📌 **For Google Cloud Research Credits reviewers:** The Proof of Concept is complete and publicly reproducible at [`EnergyPlus-API-Colab`](https://github.com/joao-petreche-usp/EnergyPlus-API-Colab) — the May 2026 refactor scopes the repo as the paper companion and ships the full GSA → CP-SAT lexicographic → EnergyPlus pipeline with a validated 3-candidate MLT Pareto front. Requested credits (**USD 4,168.52** — N4 Compute Engine + Codey + GCS) fund the scale-out from this single-archetype validation to DOE reference multi-zone commercial models, where the 91.2% function-evaluation reduction (Talami et al. 2024) translates directly into weeks→hours of wall-clock savings. 
+**Current status:** Public reproducibility companion released — [`EnergyPlus-API-Colab`](https://github.com/joao-petreche-usp/EnergyPlus-API-Colab). The canonical GCP VM pipeline reproduces the Sobol-Saltelli sensitivity decomposition and the four-point Pareto front against the validated 192-simulation exhaustive ground truth on the `5ZoneAirCooled` archetype.
 
 ---
 
@@ -46,7 +44,7 @@ This project addresses a fundamental challenge in sustainable architecture: the 
 
 | Repository | Description |
 |---|---|
-| [`EnergyPlus-API-Colab`](https://github.com/joao-petreche-usp/EnergyPlus-API-Colab) | Paper-reproducibility companion — hierarchical multi-objective building optimization via Axiomatic Design, OR-Tools and EnergyPlus Python API |
+| [`EnergyPlus-API-Colab`](https://github.com/joao-petreche-usp/EnergyPlus-API-Colab) | Companion code for Petreche & Correa, *Decoupling Building Energy Models for Lexicographic Multi-Objective Optimization* (under review, *Energy and Buildings*) |
 | [`AI-Engineering-Curriculum`](https://github.com/joao-petreche-usp/AI-Engineering-Curriculum) | Methods, tools, and workflows in Scientific AI Engineering — built from real research experience |
 
 ---
@@ -54,7 +52,7 @@ This project addresses a fundamental challenge in sustainable architecture: the 
 ## 🛠️ Tech Stack
 
 **Simulation & Optimization**
-`EnergyPlus` `Google OR-Tools (CP-SAT)` `Python`
+`EnergyPlus` `SALib (Sobol)` `Google OR-Tools (CP-SAT)` `Python`
 
 **Infrastructure & Compute**
 `Google Cloud (Compute Engine · GCS)` `Google Colab` `Cloud Shell`
